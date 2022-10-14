@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bim_users",
+  "info": {
+    "singularName": "bim-user",
+    "pluralName": "bim-users",
+    "displayName": "bim-users",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "jury",
+        "employee",
+        "student"
+      ]
+    },
+    "user_photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "function": {
+      "type": "string"
+    },
+    "feedback": {
+      "type": "text"
+    }
+  }
+}
